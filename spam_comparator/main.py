@@ -2,7 +2,7 @@ import os
 import datetime as dt
 import re
 
-from new_version.spam_comparator import SpamComparator
+from spam_comparator import SpamComparator
 
 
 def request_path_input():
@@ -42,7 +42,7 @@ def request_days_input():
 def request_file_for_result_input():
     while True:
         file = input('Quel nom voulez-vous pour le fichier de resultats .txt qui sera deposé à la racine? '
-                     '(Defaut : Results)')
+                     '(Defaut : results)')
         if not file:
             file = "results"
         file += '.txt'
